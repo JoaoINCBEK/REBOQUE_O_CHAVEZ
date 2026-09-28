@@ -219,18 +219,15 @@ h1, h2, h3 {
   transition: height 300ms var(--ease);
 }
 .site-header.is-scrolled .logo-img { height: 60px; }
-.logo-text { display: flex; flex-direction: column; gap: 2px; line-height: 1.1; }
 .logo-name {
-  font-family: var(--font-display, "Sora", sans-serif);
+  font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+  font-size: clamp(1.25rem, 3.2vw, 2.5rem);
+  line-height: 1;
   letter-spacing: -.01em;
-  color: var(--color-text, #fff);
-}
-.logo-tag {
-  font-size: clamp(.75rem, 1vw, .875rem);
-  font-weight: 600;
-  color: var(--color-primary);
+  text-transform: uppercase;
+  color: var(--color-text);
+  white-space: nowrap;
 }
 .footer-brand .logo-img { height: 140px; }
 
